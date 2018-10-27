@@ -24,7 +24,7 @@ using namespace std;
 //	system("pause");
 //}
 
-int main()
+int main(int argc, char** argv)
 {
 	//EntryPoint();
 	/*char str[] = "-123456789jg";
@@ -33,8 +33,17 @@ int main()
 	//writeFile();
 	//readFile();
 	//myGetlineFUn();
-	StrTokFun();
-
+	//StrTokFun();
+	if (argc < 2)
+	{
+		cout << "no arguments passed:";
+	}
+	else
+	{
+		cout << argv[1];
+	}
+	EntryPoint19();
+	cout << endl;
 	system("Pause");
 
 }

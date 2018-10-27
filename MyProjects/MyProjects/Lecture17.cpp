@@ -13,6 +13,18 @@ void EntryPoint()
 	int num = atoi("67ac");
 	cout << num;
 }
+void MyDisplay(int argc, char** argv)
+{
+	if (argc < 2)
+	{
+		cout << "no arguments passed:";
+		cout << argv;
+	}
+	else
+	{
+		cout << *argv + 1 ;
+	}
+}
 int Myatoi(char *str)
 {
 	int i = 0;
@@ -49,20 +61,20 @@ void myGetlineFUn()
 
 }
 
-int StrTokFun()
-{
-    char str[] = "these are tokens";
-	rsize_t strmax = sizeof str;
-	const char *delim = ",";
-	char *nextTok;
-	
-	cout << "following are the tokens:" << "\n";
-	char* token;
-	token = strtok_s(str, &strmax,delim);
-	while (token)
-	{
-		cout << token << "\n";
-		token = strtok(NULL, delim);
-	}
-	return 0;
-}
+//int StrTokFun()
+//{
+	/*  char str[] = "these are tokens";
+	  rsize_t strmax = sizeof str;
+	  const char *delim = ",";
+	  char *nextTok;
+
+	  cout << "following are the tokens:" << "\n";
+	  char* token;
+	  token = strtok_s(str, &strmax,delim);
+	  while (token)
+	  {
+		  cout << token << "\n";
+		  token = strtok(NULL, delim);
+	  }
+	  return 0;*/
+//}
